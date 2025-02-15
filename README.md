@@ -1,48 +1,98 @@
-# Astro Starter Kit: Basics
+# Modern Apple-Style Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+A modern, minimalist portfolio website built with Astro and designed with Apple's design aesthetic in mind.
+
+## Features
+
+- ⚡️ Built with Astro for optimal performance
+- 🎨 Tailwind CSS for styling
+- 🌟 GSAP animations
+- 📱 Fully responsive design
+- 🎬 Three.js integration for 3D elements
+- ⚛️ React components integration
+- 🍎 Apple-style design aesthetic
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v20 or higher)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/larry-xue/apple-style-portfolio
+cd apple-style-portfolio
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+2. Install dependencies:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm install
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### Development
 
-## 🧞 Commands
+To start the development server:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+npm run dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+The site will be available at `http://localhost:4321`
 
-## 👀 Want to learn more?
+### Building for Production
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+### Deploy with Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/larry-xue/apple-style-portfolio)
+
+1. Fork this repository
+2. Connect to Vercel using your GitHub account
+3. Select the forked repository
+4. Vercel will automatically detect Astro and configure the build settings
+5. Click "Deploy"
+
+### Deploy with Cloudflare Pages
+
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-orange.svg?logo=cloudflare)](https://dash.cloudflare.com/sign-up)
+
+1. Fork this repository
+2. Log in to the Cloudflare dashboard
+3. Select "Pages" from the sidebar
+4. Create a new project and connect your GitHub repository
+5. Configure the build settings:
+   - Build command: `npm run build`
+   - Build output directory: `dist`
+   - Node.js version: 20.x
+6. Click "Save and Deploy"
+
+## Tech Stack
+
+- [Astro](https://astro.build)
+- [React](https://reactjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [GSAP](https://greensock.com/gsap)
+- [Three.js](https://threejs.org)
+- [Inter Font](https://rsms.me/inter)
+- [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+
+## License
+
+MIT License
