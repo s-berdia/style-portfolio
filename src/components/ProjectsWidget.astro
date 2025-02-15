@@ -1,43 +1,40 @@
 ---
-interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  link: string;
-}
+import { projects } from '../data/project';
+import type { Project } from '../types/project';
 
-const projects: Project[] = [
-  {
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce solution built with Next.js and Stripe',
-    tech: ['Next.js', 'TypeScript', 'Stripe'],
-    link: '#'
-  },
-  {
-    title: 'AI Chat Application',
-    description: 'Real-time chat app with AI-powered responses',
-    tech: ['React', 'Node.js', 'OpenAI'],
-    link: '#'
-  }
-];
+const featuredProjects: Project[] = projects;
 ---
 
 <div class="bg-white/80 backdrop-blur-lg rounded-3xl p-6 shadow-xl">
-  <h3 class="text-2xl font-semibold mb-4">Recent Projects</h3>
-  <div class="space-y-4">
-    {projects.map((project) => (
+  <div class="flex justify-between items-center mb-6">
+    <h3 class="text-2xl font-semibold text-blue-900">Featured Projects</h3>
+    <a href="/projects" class="text-blue-600 hover:text-blue-800 transition-colors">
+      View all projects →
+    </a>
+  </div>
+  <div class="grid gap-6">
+    {featuredProjects.map((project) => (
       <a 
-        href={project.link}
-        class="block p-4 rounded-2xl hover:bg-apple-gray-50 transition-colors"
+        href={project.demoUrl}
+        class="block bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-lg transition-all duration-300"
       >
-        <h4 class="text-xl font-medium mb-2">{project.title}</h4>
-        <p class="text-apple-gray-400 mb-3">{project.description}</p>
-        <div class="flex flex-wrap gap-2">
-          {project.tech.map((tech) => (
-            <span class="px-3 py-1 bg-apple-gray-100 rounded-full text-sm">
-              {tech}
-            </span>
-          ))}
+        <div class="flex gap-6">
+          <img
+            src={project.image}
+            alt={project.title}
+            class="w-24 h-24 rounded-xl object-cover"
+          />
+          <div class="flex-1">
+            <h4 class="text-xl font-medium text-blue-900 mb-2">{project.title}</h4>
+            <p class="text-blue-600 mb-3">{project.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {project.tags.map((tech) => (
+                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </a>
     ))}

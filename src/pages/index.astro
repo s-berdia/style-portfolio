@@ -1,17 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import InfoWidgets from '../components/InfoWidgets.astro';
-import SkillsWidget from '../components/SkillsWidget.astro';
-import ProjectsWidget from '../components/ProjectsWidget.astro';
-import ExperienceWidget from '../components/ExperienceWidget.astro';
-import ContactSection from '../components/ContactSection.astro';
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import InfoWidgets from '../components/InfoWidgets.astro'
+import SkillsWidget from '../components/SkillsWidget.astro'
+import ProjectsWidget from '../components/ProjectsWidget.astro'
+import ExperienceWidget from '../components/ExperienceWidget.astro'
+import ContactSection from '../components/ContactSection.astro'
+import BlogWidgets from '../components/BlogWidgets.astro'
 ---
 
 <Layout title="Modern Developer Portfolio">
   <main>
     <Hero />
-    
+
     <section class="py-20 px-4">
       <div class="container mx-auto max-w-6xl">
         <div class="mb-8">
@@ -21,8 +22,13 @@ import ContactSection from '../components/ContactSection.astro';
           <SkillsWidget />
           <ProjectsWidget />
         </div>
-        <div class="space-y-8">
+        <div class="space-y-8 mb-8">
           <ExperienceWidget />
+        </div>
+        <div class="space-y-8 mb-8">
+          <BlogWidgets />
+        </div>
+        <div class="space-y-8 mb-8">
           <ContactSection />
         </div>
       </div>
@@ -31,13 +37,13 @@ import ContactSection from '../components/ContactSection.astro';
 </Layout>
 
 <script>
-  import { gsap } from 'gsap';
-  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import { gsap } from 'gsap'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger)
 
   // Animate widgets on scroll
-  gsap.utils.toArray('.bg-white\\\/80').forEach((widget: any) => {
+  gsap.utils.toArray('.bg-white\\/80').forEach((widget: any) => {
     gsap.from(widget, {
       y: 50,
       opacity: 0,
@@ -45,8 +51,8 @@ import ContactSection from '../components/ContactSection.astro';
       scrollTrigger: {
         trigger: widget,
         start: 'top bottom-=100',
-        toggleActions: 'play none none reverse'
-      }
-    });
-  });
+        toggleActions: 'play none none reverse',
+      },
+    })
+  })
 </script>
