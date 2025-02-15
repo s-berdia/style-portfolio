@@ -4,13 +4,13 @@ A modern, minimalist portfolio website built with Astro and designed with Apple'
 
 ## Features
 
+- 🍎 Apple-style design aesthetic
 - ⚡️ Built with Astro for optimal performance
 - 🎨 Tailwind CSS for styling
 - 🌟 GSAP animations
 - 📱 Fully responsive design
 - 🎬 Three.js integration for 3D elements
 - ⚛️ React components integration
-- 🍎 Apple-style design aesthetic
 
 ## Getting Started
 
