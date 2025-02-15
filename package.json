@@ -3,6 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larry-xue/apple-style-portfolio"
+  },
+  "author": {
+    "name": "Yujian Xue",
+    "email": "azoux0311@gmail.com"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
