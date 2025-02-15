@@ -1,6 +1,12 @@
-# Modern Apple-Style Portfolio
+# Apple-Style Portfolio Template
 
-A modern, minimalist portfolio website built with Astro and designed with Apple's design aesthetic in mind.
+[English](README.md) | [简体中文](README.zh-CN.md)
+
+A modern, minimalist portfolio template built with Astro and designed with Apple's design aesthetic in mind.
+
+live demo: [apple-style-portfolio](https://apple-style-portfolio.larryxue.dev/)
+
+If you find this project helpful, please consider giving it a star ⭐️.
 
 ## Features
 
@@ -11,6 +17,19 @@ A modern, minimalist portfolio website built with Astro and designed with Apple'
 - 📱 Fully responsive design
 - 🎬 Three.js integration for 3D elements
 - ⚛️ React components integration
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Development](#development)
+  - [Building for Production](#building-for-production)
+- [Deployment](#deployment)
+  - [Deploy with Vercel](#deploy-with-vercel)
+  - [Deploy with Cloudflare Pages](#deploy-with-cloudflare-pages)
+- [Tech Stack](#tech-stack)
+- [License](#license)
 
 ## Getting Started
 
@@ -23,8 +42,12 @@ A modern, minimalist portfolio website built with Astro and designed with Apple'
 1. Clone the repository:
 
 ```bash
+# Clone the repository
 git clone https://github.com/larry-xue/apple-style-portfolio
 cd apple-style-portfolio
+
+# Or use astro create
+npm create astro@latest -- --template larry-xue/apple-style-portfolio
 ```
 
 2. Install dependencies:
