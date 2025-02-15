@@ -1,0 +1,45 @@
+---
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  link: string;
+}
+
+const projects: Project[] = [
+  {
+    title: 'E-Commerce Platform',
+    description: 'A modern e-commerce solution built with Next.js and Stripe',
+    tech: ['Next.js', 'TypeScript', 'Stripe'],
+    link: '#'
+  },
+  {
+    title: 'AI Chat Application',
+    description: 'Real-time chat app with AI-powered responses',
+    tech: ['React', 'Node.js', 'OpenAI'],
+    link: '#'
+  }
+];
+---
+
+<div class="bg-white/80 backdrop-blur-lg rounded-3xl p-6 shadow-xl">
+  <h3 class="text-2xl font-semibold mb-4">Recent Projects</h3>
+  <div class="space-y-4">
+    {projects.map((project) => (
+      <a 
+        href={project.link}
+        class="block p-4 rounded-2xl hover:bg-apple-gray-50 transition-colors"
+      >
+        <h4 class="text-xl font-medium mb-2">{project.title}</h4>
+        <p class="text-apple-gray-400 mb-3">{project.description}</p>
+        <div class="flex flex-wrap gap-2">
+          {project.tech.map((tech) => (
+            <span class="px-3 py-1 bg-apple-gray-100 rounded-full text-sm">
+              {tech}
+            </span>
+          ))}
+        </div>
+      </a>
+    ))}
+  </div>
+</div>
