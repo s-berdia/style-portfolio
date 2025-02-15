@@ -7,6 +7,8 @@ import ProjectsWidget from '../components/ProjectsWidget.astro'
 import ExperienceWidget from '../components/ExperienceWidget.astro'
 import ContactSection from '../components/ContactSection.astro'
 import BlogWidgets from '../components/BlogWidgets.astro'
+import AchievementsWidget from '../components/AchievementsWidget.astro'
+import TestimonialsWidget from '../components/TestimonialsWidget.astro'
 ---
 
 <Layout title="Modern Developer Portfolio">
@@ -18,6 +20,9 @@ import BlogWidgets from '../components/BlogWidgets.astro'
         <div class="mb-8">
           <InfoWidgets />
         </div>
+        <div class="space-y-8 mb-8">
+          <AchievementsWidget />
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <SkillsWidget />
           <ProjectsWidget />
@@ -27,6 +32,9 @@ import BlogWidgets from '../components/BlogWidgets.astro'
         </div>
         <div class="space-y-8 mb-8">
           <BlogWidgets />
+        </div>
+        <div class="space-y-8 mb-8">
+          <TestimonialsWidget />
         </div>
         <div class="space-y-8 mb-8">
           <ContactSection />
@@ -43,7 +51,22 @@ import BlogWidgets from '../components/BlogWidgets.astro'
   gsap.registerPlugin(ScrollTrigger)
 
   // Animate widgets on scroll
+  // Animate white background widgets
   gsap.utils.toArray('.bg-white\\/80').forEach((widget: any) => {
+    gsap.from(widget, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: widget,
+        start: 'top bottom-=100',
+        toggleActions: 'play none none reverse',
+      },
+    })
+  })
+
+  // Animate achievements widget
+  gsap.utils.toArray('.bg-gradient-to-r').forEach((widget: any) => {
     gsap.from(widget, {
       y: 50,
       opacity: 0,
