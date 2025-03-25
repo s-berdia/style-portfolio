@@ -21,7 +21,7 @@ export const projects: Project[] = [
       id: 2,
       title: "CyberMaze",
       description: "an interactive game that helps the user learn the ways to avoid Cyber Crime/Breaches using various levels of mazes and a plethora of assets.",
-      image: "https://lh3.googleusercontent.com/keep-bbsk/AFgXFlJOhe_0O5pjQtm4eS1gMwnDWvNf8uvchrkgdIxC2GX0oNHk83yyNfpdK9O7DitghVLz93qJgpPWM7ivrDeiRybqVL5lGCdaKg-sS9wNZzumvp8mY3RSug=s1080",
+      image: "https://media-hosting.imagekit.io//1c55a3ee590e43a9/unnamed.png?Expires=1837551372&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UGsR1~vql3ycJmCkMGlGS5CfT6YUwv3QGBMcLRic5rqG4EbJXdOnD5BL3D5yzL5Pw87m8C9oLT0q3F-adtUGnuuWM8lte9gAtblknIiZKWGoDRw10XKlLUJXUMHkhqZKR9oJJjLPT3kbCGUSdmsCok9sVeUiXue7R5MqzM8ePs0rpb3MlYsRtl5Jyo8w3LHgulFDH6JbZjRxvvlZwZARSQt02MNXyth6xO-ziPpRRrbt2n4rL01W7JmjkzJ7opXz53nVKTin4PkFITjhqNV2tKHyEWgprQtd7AYp50hGk3T~lwNL2h5I~o-i6rUnsQG70-rcVKv2m7Xituk4coL~AA__",
       tags: [
         "C#",
         "IBM Watson",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       id: 3,
       title: "findit.",
       description: "findit. is an intelligent shopping assistant designed to guide users through the decision-making process. By interacting with a natural language chatbot, users can specify their needs (e.g., “I need a phone with good battery life and a large display”). The chatbot leverages large language models (LLMs) and a vectorized product database to return 3-5 highly personalized product recommendations. It is also designed to allow users to tweak their preferences for an even better match.",
-      image: "https://drive.google.com/file/d/1CeQkafImBN6tQiqvz6hcsKZVp6weJmSb/view",
+      image: "https://media-hosting.imagekit.io//fb52cb28748549e8/download.png?Expires=1837551518&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=1MUgU73qj3c0ayuTQw~wZrLFP-MCv4Mj80pK6AZZLYjyuqWz40IYUGFxwLFll-EB3l-IbA0i1U41fQJRAUDD~UP5wYQ8oo6Da-ycD53HnVmKyG86sfOtPJVBdEokGWJb116SQI3dZTxmGYxUxqGWTNQm~QUENcpc0UI3~X8fYYcB4iR1hkIYPuIOXLsyiO4LYp9Y8pKICaEymypG3trOdBXo6e1kUR6x~sS4CRGdP5qIuc3sc8Bl8cbHPGFa8wK60zDxiqMgs732oxggyaDNRLIxIaf69vnPetH9gw2MzrhIAdj2hfZAWQZXCzqLB5zNR68vmHpxYvFfnerNDgWiDQ__",
       tags: [
         "Adobe Illustrator",
         "Alexa",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
       ],
       demoUrl: "https://devpost.com/software/findit-lhqfgr",
       githubUrl: "https://github.com/ZacharyHampton/sunhacks-2024",
-      featured: false
+      featured: true
     }
 ];
 
